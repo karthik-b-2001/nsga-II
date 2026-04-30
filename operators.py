@@ -1,7 +1,7 @@
 import numpy as np
 
-from .crowding import crowded_comparison
-from .individual import Individual
+from crowding import crowded_comparison
+from individual import Individual
 
 
 def tournament_selection(population):

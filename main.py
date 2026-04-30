@@ -7,25 +7,25 @@ import matplotlib.ticker as ticker
 import math
 from copy import deepcopy
 
-from .individual import Individual
-from .sorting import dominates, fast_nondominated_sort
-from .crowding import crowding_distance_assignment, crowded_comparison
-from .operators import tournament_selection, sbx_crossover, polynomial_mutation
-from .nsga2 import (
+from individual import Individual
+from sorting import dominates, fast_nondominated_sort
+from crowding import crowding_distance_assignment, crowded_comparison
+from operators import tournament_selection, sbx_crossover, polynomial_mutation
+from nsga2 import (
     initialize_population,
     evaluate_population,
     make_new_population,
     nsga2_step,
     run_nsga2,
 )
-from .problems import (
+from problems import (
     zdt1, zdt1_bounds, zdt1_front,
     zdt2, zdt2_bounds, zdt2_front,
     zdt3, zdt3_bounds, zdt3_front,
     zdt4, zdt4_bounds, zdt4_front,
     PROBLEMS,
 )
-from .metrics import convergence_metric, diversity_metric
+from metrics import convergence_metric, diversity_metric
 
 
 plt.rcParams.update({

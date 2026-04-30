@@ -1,9 +1,9 @@
 import numpy as np
 
-from .crowding import crowding_distance_assignment
-from .individual import Individual
-from .operators import polynomial_mutation, sbx_crossover, tournament_selection
-from .sorting import fast_nondominated_sort
+from crowding import crowding_distance_assignment
+from individual import Individual
+from operators import polynomial_mutation, sbx_crossover, tournament_selection
+from sorting import fast_nondominated_sort
 
 
 def initialize_population(N, n_vars, bounds):
